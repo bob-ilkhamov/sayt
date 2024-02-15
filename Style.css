@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header__wrap{
+display: flex;
+justify-content: space-between;
+}
+
+body{
+    background-color: black;
+}
+.container{
+   max-width: 1200px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+.header__list{
+    list-style-type: none;
+    /* избавиться от точек */
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.header__menu{
+    margin-right: 40px;
+}
+.header__button{
+    width: 112px;
+    height: 52px;
+    margin-right: 30px;
+    color: white;
+    background-color: blue;
+}
+header{
+    height: 100px;
+    background-color: black;
+    padding-top: 20px;
+}
+/* raketa */
+
+.raketa__wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.raketa{
+    margin-top: 37px;
+
+}
+.raketa__name{
+    color: #3A68B8;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 148px;
+}
+.raketa__title{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 55px;
+    color: #fff;
+    margin-top: 10px;
+}
+.raketa__text{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+color: #fff;
+margin-top: 40px;
+margin-bottom: 50px;
+}
+.raketa__button-left{
+    width: 171px;
+height: 57px;
+background: #3A68B8;
+padding: 15px;
+border-radius: 5px;
+}
+.raketa__button-right{
+    width: 217px;
+height: 57px;
+border-radius: 5px;
+background: #3A68B8;
+padding: 15px 30px;
+margin-left: 20px;
+}
+
+@media (max-width: 1200px) {
+    .header{
+        width: 1200px;
+    }
+    .header__wrap{
+        padding: 0px 15px 15px 15px;
+        width: 1100px;
+     }
+
+     .raketa{
+        width: 1200px;
+        padding: 0px 20px 0px 20px;
+     }
+     .raketa__left{
+        width: 400px;
+        }
+         .raketa__img{
+            width: 800px;
+         }
+    .raketa__button-left{
+    margin: 30px 0px 30px 0px;
+    } 
+    .raketa__button-right{
+    margin: 0px 0px 30px 0px;
+    }
+}
+
+@media (max-width: 360px) {
+    .header{
+        width: 350px;
+    }
+    .header__wrap{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+     }
+    .logo{
+        width: 350px;
+        margin-bottom: 20px;
+    }
+    .header__list{
+        margin-top: 0px;
+        font-size: 20px;
+    }
+     .raketa{
+        width: 360px;
+        padding: 0px 20px 0px 20px;
+     }
+     .raketa__wrap{
+        display: flex;
+        flex-direction: column;
+        margin-top: -50px;
+     }
+     .raketa__left{
+        width: 360px;
+        }
+         .raketa__img{
+            width: 360px;
+         }
+    .raketa__button-left{
+    margin: 20px 0px 20px 0px;
+    } 
+    .raketa__button-right{
+    margin: 0px 0px 20px 0px;
+    }
+    .header__button{
+    margin: 40px 10px 10px 110px;
+    }
+    .raketa__name{
+        padding-top: 60px;
+    }
+}
+
